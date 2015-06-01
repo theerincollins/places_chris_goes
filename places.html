@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <link href='http://fonts.googleapis.com/css?family=Londrina+Solid' rel='stylesheet' type='text/css'>
+    <script src="js/jquery-1.11.3.min.js"></script>
+    <script src="js/scripts.js"></script>
+    <title>Places Chris Has Been</title>
+  </head>
+
+  <body>
+    <div class="all container">
+      <div class="header">
+        <h1>CHRIS GOES</h1>
+      </div>
+      <div class="row">
+        <div class="inputs col-sm-6">
+        <form id="places-form">
+          <div class="form-group">
+            <input class="form-control" id="input-country" type="text" placeholder="Enter a country you have visited here">
+          </div>
+          <div class="form-group">
+            <input class="form-control" id="input-city" type="text" placeholder="Enter the city here">
+          </div>
+          <div class="form-group">
+            <input class="form-control" id="input-year" type="text" placeholder="Enter the year you visited here">
+          </div>
+
+          <div id="new-memories">
+            <div class="new-memory">
+              <div class="form-group">
+                <input class="form-control input-description" type="text" placeholder="Enter an awesome memory from this trip">
+              </div>
+                <div class="form-group">
+                <input class="form-control input-quality" type="text" placeholder="Enter the quality of this memory, good or bad">
+              </div>
+              </div>
+            </div>
+
+          <span class="btn btn-success" id="add-memory">Add another memory</span>
+          <button type="submit" class="btn btn-info">Save Trip</button>
+        </form>
+      </div>
+      <div class="col-sm-6">
+        <div class="trip-column">
+          <ul id="trip-list" class="pull-left">
+          </ul>
+
+
+            <div id="show-trip">
+              <p class="trip-details"><br>This one time back in <span class="year"></span>, I was traveling to <span class="country"></span> for business and I was staying in <span class="city"></span>. I remember when <ul id="memories">
+              </ul></p>
+            </div>
+          </div>
+          </div>
+        </div>
+    </div>
+  </body>
+</html>
